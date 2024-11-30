@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayan Assouli's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Rayan Assouli</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Welcome to My Personal Website</h1>
+        <p> My name is Rayan Assouli, a self-taught programmer with a passion for sports!</p>
+        <button onclick="scrollToSection('about')">Learn More</button>
+    </section>
+
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am Rayan Assouli, a 16 year old Arab-American teenager residing in Orlando, Florida. 
+            I am very passionate about soccer and a lot of things included in life. If there was one word to describe me, 
+            I would say hard work because I am never one to give up easily, and I always work hard even with the many challenges life gives me.
+        </p>
+    </section>
+
+    <section id="hobbies" class="section hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Running</li>
+            <li>Playing Soccer</li>
+            <li>College Sports</li>
+            <li>Hands-on Projects</li>
+            <li>Working out</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <p>This website!</p>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out if you have any questions or want to connect!</p>
+        <form action="mailto:1rayanassouli@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section> <section id="snake-game" class="section snake-game">
+        <h2>Play Snake!</h2>
+        <div id="scoreBoard">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+        <div id="snakeCanvasWrapper">
+            <canvas id="snakeCanvas"></canvas>
+        </div>
+        <button onclick="startSnakeGame()">Start Game</button>
+</section>
+    
+    <footer>
+        <p>© 2024 Rayan Assouli</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
